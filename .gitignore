@@ -1,0 +1,11 @@
+# .gitgnore for this project
+
+./git
+
+# Vim Files (Main IDE files)
+
+*.swp
+./pycache
+
+# END
+

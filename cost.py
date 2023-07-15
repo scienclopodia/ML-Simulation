@@ -20,14 +20,14 @@ class costCalculation:
         if len(self.dataSetX) != len(self.dataSetY):
             print("\n\n\n\n\n DATASET LENGTHS ARE DIFFERENT.")
             sys.exit()
-        else: 
+        else:
             pass
 
         self.hypothesisY = [] # Empty list.
-        
+
         for i in range(len(self.dataSetX)):
             self.hypothesisY.append(self.intercept + (self.dataSetX[i]*self.slope)) # Make values for the hypothesis at the data's X loc.
-        
+
         for i in range(len(self.dataSetX)):
             self.tempCost = (self.hypothesisY[i] - self.dataSetY[i]) ** 2
             self.cost += self.tempCost

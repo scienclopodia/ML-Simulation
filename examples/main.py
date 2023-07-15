@@ -1,12 +1,16 @@
 # A piece of code that is supposed to do some ML algs.
 # Made by Rayner Setiawan
 
+import sys
+
+sys.path.insert(1, '../')
+
 from cost import costCalculation
 
 def main():
     # dataPointLocation = [(1, 1), (2, 2), (3, 3), (4, 4)]
     dataPointLocation = [(1, 1)]
-    
+
     dataPointLocationX = []
     dataPointLocationY = []
 
@@ -21,9 +25,9 @@ def main():
     slope = 0
 
     costCalc = costCalculation(dataPointLocationX, dataPointLocationY, intercept, slope)
-    
+
     print(costCalc.calculateCost())
 
 if __name__ == "__main__":
 	main()
-    
+
