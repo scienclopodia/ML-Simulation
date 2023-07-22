@@ -7,6 +7,8 @@ class costCalculation:
         self.intercept = intercept
         self.slope = slope
         self.cost = 0
+        self.tempCost = 0
+        self.hypothesisY = []
 
     def calculateCost(self):
         """
@@ -21,8 +23,6 @@ class costCalculation:
             sys.exit()
         else:
             pass
-
-        self.hypothesisY = [] # Empty list.
 
         for i in range(len(self.dataSetX)):
             self.hypothesisY.append(self.intercept + (self.dataSetX[i]*self.slope)) # Make values for the hypothesis at the data's X loc.

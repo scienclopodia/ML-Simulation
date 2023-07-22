@@ -29,5 +29,5 @@ def main():
     print(costCalc.calculateCost())
 
 if __name__ == "__main__":
-	main()
+    main()
 
